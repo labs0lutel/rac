@@ -1,0 +1,43 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .city {
+    background: url('./gorod_noch_zvezdnoe_nebo_145083_2048x1152.jpg') repeat-x; 
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .car {
+    background: url('./1643163103_74-phonoteka-org-p-fon-dlya-mashini-v-profil-82.png') no-repeat; 
+    background-size: contain;
+    height: 250px;
+    width: 500px;
+    position: absolute;
+    bottom: 5vh;
+    left: 0;
+    animation: carAnimation 5s linear infinite;
+  }
+  
+  @keyframes roadAnimation {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes carAnimation {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: 100%;
+    }
+  }
